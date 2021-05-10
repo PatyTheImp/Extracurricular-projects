@@ -1,0 +1,5 @@
+K:\cenas\PoligonosApp\DatabaseTest.exe
+K:\cenas\PoligonosApp\DatabaseTest.dll
+K:\cenas\PoligonosApp\DatabaseTest.deps.json
+K:\cenas\PoligonosApp\DatabaseTest.runtimeconfig.json
+K:\cenas\PoligonosApp\DatabaseTest.pdb
