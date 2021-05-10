@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>K:\OneDrive\informática\Portfolio Projects\WPFHotelSA\WPFHotelSA\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Consultas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Empregados.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Hoteis.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Movimentos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="HotelSADB.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Consultas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Empregados.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Hoteis.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Movimentos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

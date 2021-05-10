@@ -1,0 +1,62 @@
+﻿<Window x:Class="WPFHotelSA.Consultas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
+        xmlns:local="clr-namespace:WPFHotelSA"
+        mc:Ignorable="d"
+        Title=".: Consultas :." Height="450" Width="800" WindowStartupLocation="CenterScreen" Background="#038C73" 
+        ResizeMode="CanMinimize" FontFamily="Microsoft JhengHei UI">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Cabeçalho-->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Width="750">
+            <Border Name="tituloBorder" BorderBrush="#033A40" BorderThickness="0,0,0,1"
+                Width="680" VerticalAlignment="Center">
+                <Label Name="lblTitulo" Content="Consultas" FontSize="16" Foreground="#033A40" FontWeight="Bold"/>
+            </Border>
+
+            <Button Name="btnMenu" Width="60" Height="40" HorizontalAlignment="Left" ToolTip="Voltar ao Menu Principal"
+                    Click="BtnMenu_Click" Background="#033A40" Margin="10,10,0,0" Style="{StaticResource ButtonRound}">
+                <fa5:ImageAwesome Icon="Solid_Bars" Height="20" Width="20"  Foreground="#B6D936"/>
+            </Button>
+        </StackPanel>
+        
+        <!--Consultas-->
+        <StackPanel  Grid.Row="1" Margin="25,0,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                <Label Content="Empregados que deram entrada em um hotel em "/>
+                <DatePicker Name="dpData" BorderBrush="{x:Null}"/>
+                <Button Name="btnConsulta1" Height="25" Width="30" Style="{StaticResource ButtonRound}" VerticalAlignment="Top"
+                Background="#033A40" ToolTip="Consultar" Click="BtnConsulta1_Click">
+                    <fa5:ImageAwesome Icon="Solid_Search" Height="15" Foreground="#B6D936"/>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Empregados cujo nome começa pela letra "/>
+                <ComboBox Width="40" Name="cmbLetra" BorderBrush="{x:Null}" Margin="0,0,5,0"/>
+                <Button Name="btnConsulta2" Height="25" Width="30" Style="{StaticResource ButtonRound}" VerticalAlignment="Top"
+                Background="#033A40" ToolTip="Consultar" Click="BtnConsulta2_Click">
+                    <fa5:ImageAwesome Icon="Solid_Search" Height="15" Foreground="#B6D936"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+        <!--Tabelas-->
+        <DataGrid Grid.Row="2" Margin="10" Name="dgTabela" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                  CanUserAddRows="False" IsReadOnly="True" HorizontalGridLinesBrush="{x:Null}" VerticalGridLinesBrush="{x:Null}">
+            <DataGrid.AlternatingRowBackground>
+                <SolidColorBrush Color="#FF038C73" Opacity="0.25"/>
+            </DataGrid.AlternatingRowBackground>
+            
+            
+        </DataGrid>
+    </Grid>
+</Window>
