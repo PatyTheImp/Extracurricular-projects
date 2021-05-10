@@ -1,0 +1,113 @@
+﻿<Window x:Class="JogoDaMemoria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JogoDaMemoria"
+        mc:Ignorable="d"
+        Title=".: JOGO DA MEMÓRIA :." Height="550" Width="550" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Window.Background>
+        <LinearGradientBrush x:Name="gradiente" StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#85FFBD" Offset="0.0"/>
+            <GradientStop Color="#FFFB7D" Offset=".80"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle Name="rectangulo" Grid.Row="0" Grid.Column="0" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="1" Grid.Column="0" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="2" Grid.Column="0" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="3" Grid.Column="0" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="0" Grid.Column="1" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="2" Grid.Column="1" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="3" Grid.Column="1" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="0" Grid.Column="2" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="1" Grid.Column="2" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="2" Grid.Column="2" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="3" Grid.Column="2" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="0" Grid.Column="3" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="1" Grid.Column="3" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="2" Grid.Column="3" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Rectangle Grid.Row="3" Grid.Column="3" Fill="#FF302F2F" Height="125" Width="130" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell1" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell2" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell3" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell4" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell5" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell6" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell7" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell8" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell9" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell10" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell11" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell12" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell13" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell14" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell15" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Name="cell16" Content=""  FontFamily="Wingdings" FontSize="100" MouseDown="Cell_MouseDown"/>
+        </StackPanel>
+    </Grid>
+</Window>

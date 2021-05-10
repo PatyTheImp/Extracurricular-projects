@@ -1,0 +1,5 @@
+K:\cenas\Minhas Apps\JogoDaMemoria\JogoDaMemoria.exe
+K:\cenas\Minhas Apps\JogoDaMemoria\JogoDaMemoria.dll
+K:\cenas\Minhas Apps\JogoDaMemoria\JogoDaMemoria.deps.json
+K:\cenas\Minhas Apps\JogoDaMemoria\JogoDaMemoria.runtimeconfig.json
+K:\cenas\Minhas Apps\JogoDaMemoria\JogoDaMemoria.pdb
