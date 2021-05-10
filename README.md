@@ -9,4 +9,4 @@ Matching game I've adapted from [a Microsoft tutorial](https://docs.microsoft.co
 Little drawing app I've made. You can draw polygons, give them color, change background color, invert colors and delete polygons individually or all at once.
 
 ## HotelSA
-Hotel management I've made mostly for training CRUD and WPF.
+Hotel management app I've made mostly for training CRUD and WPF.
